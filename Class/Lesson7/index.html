@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSStext</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        p {
+            font-size: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            color: red;
+        }
+        li:first-child {
+            color: red;
+        }
+        li:last-child {
+            color: blue;
+        }
+        li:nth-child(2){
+            color: green;
+        }
+        /* .box p {
+            color: red;
+        } */
+        .box p:nth-of-type(1){
+            color: red;
+        }
+        .box h2:nth-of-type(1){
+            color: red;
+        }              
+        body {
+            background-color: white；
+        }
+        .box::before {
+            content: '*****';
+            display: inline-block;
+            width: 30px;
+            height: 30PX;
+            border-radius: 50%;
+            background-color: red;
+        }
+        p::selection {
+            color: green;
+            background-color: grey;
+        }
+        p::first-letter {
+            font-size: 30px;
+        }
+/* .item+p {color: red} 
+.item~p {color: yellow} 
+.item p {color: blue}
+p.item {color: blue}
+.item>p{color: blue} */
+        h3.item {
+            color: hsl(90, 100%, 100%);
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HELLO WORLD</h1>
+    <p>你好</p>
+    <a href="">饥人谷</a>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <div class="box">
+        <h1>hahahha</h1>
+        <p>1</p>
+        <p>2</p>
+        <h2>88888</h2>
+        <p>3</p>
+    </div>
+    <div class="item">
+        <h3 class="abc">111111</h3>
+                <h3>111111</h3>
+        <h4>4hh4h4h4h</h4>
+        
+
+        <h5>55555555</h5>
+        <div>
+            <h3>222--2222</h3>
+            <h3></h3>
+        </div>
+        <h3 class="item">123465465498798654</h3>
+        <h3>222222</h3>
+        <h3>333333</h3>
+    </div>
+    
+</body>
+</html>

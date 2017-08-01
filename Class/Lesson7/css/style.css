@@ -1,0 +1,11 @@
+@charset 'utf-8';
+@import 'style2.css';
+
+/*
+傻宝宝
+*/
+
+h1 {
+    color: red;
+    font-family: '微软雅黑'；
+}
