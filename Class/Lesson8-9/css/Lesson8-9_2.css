@@ -11,6 +11,6 @@ body {
     color: blue;
 }
 .button:active {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
