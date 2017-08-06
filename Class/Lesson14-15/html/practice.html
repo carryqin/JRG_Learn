@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,ul,li {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        header {
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+            text-align: center;
+            padding: 5px 0;
+        }
+        .tabs {
+            font-size: 0;
+             display: inline-block; 
+            background-color: red;
+        }
+        .tabs > li {
+            font-size: 14px;
+            padding: 10px;
+            border: 1px solid #999;
+            border-right: none;
+            display: inline-block;
+        }
+        .tabs > li:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+        .tabs > li:last-child {
+            border-right: 1px solid ;
+            border-radius: 0 4px 4px 0;
+        }
+        span {
+            border: 1px solid;
+            visibility: hidden;/*隐藏，但位置保留*/
+            opacity: 0;/*完全透明，但位置保留*/
+        }
+        .abc {
+            margin: 30px;
+            padding: 20px;
+            width: 40px;
+            height: 50px;
+            border: 10px solid;
+        }
+        .container {
+            width: 600px;
+            margin: 10px auto;
+            background-color: grey;
+            font-size: 0;
+        }
+        .box {
+            font-size: 16px;
+            width: 172px;
+            height: 50px;
+            border: 4px solid blue;
+            padding: 10px;
+            background: red;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <ul class="tabs">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Console</li>
+            <li>Output</li>       
+        </ul>
+    </header>
+    <span>饥人谷</span>
+    <span>NinthG</span>
+    <p>哈哈哈</p>
+    <div class="abc">
+
+    </div>
+    <div class="containter">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
