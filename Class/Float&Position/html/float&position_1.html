@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+        }
+        .container {
+            width: 520px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -260px;
+            margin-top: -125px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .content {
+
+        }
+        .author img {
+            width: 50px;
+            float: left;
+        }
+        .author span {
+            height: 50px;
+            line-height: 50px;
+        }
+        .name {
+            margin-left: 5px;
+        }
+        .time {
+            margin-left: 5px;
+            color: grey;
+        }
+        .desc img {
+            float: right;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .desc p {
+            float: left;
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 240px;
+            height: 60;
+            display: -webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp: 4;
+            line-height: 1.5;
+        }
+          .content::after{
+            content:'';
+            display:block;
+            clear: both;
+         }
+        a {
+            text-decoration: none;
+        }
+        .btn {
+            background-color: white;
+            color: red;
+            border: 1px solid red;
+            padding: 5px 15px;
+            display: inline-block;
+            line-height: 1;
+            margin: 15px 10px;
+            border-radius: 3px;
+        }
+        .btn a {
+            float: left;
+        }
+        .pic img {
+            width: 20px;
+            vertical-align: middle;
+        }
+        .state span {
+            height: 50px;
+            line-height: 50px;
+        }
+        .browse {
+            margin-left: 5px;
+        }
+        .comments {
+            margin-left: 5px;
+        }
+        .favorites {
+            margin-left: 5px;
+        }
+        .pay {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="author">
+            <span>
+                <img src="http://otdgo898q.bkt.clouddn.com/playsation.png" alt="">
+            </span>
+            <span class="name">Steam</span>
+            <span class="time">昨天23:59</span>
+        </div>
+        <div class="content">
+            <div class="desc">
+                <img src="http://otdgo898q.bkt.clouddn.com/steampic.jpg" alt="">
+                <h2>Steam将于2017年8月10日进行立秋大促</h2>
+                <p>据外媒eurogamer报道，steam秋季特惠将于8月10日凌晨2点开始，9月1日凌晨2点结束。不过今年的特惠方式有些特别，在这两个年度特惠期间，将取消每日特惠和限时特惠活动。</p>
+            </div>
+        </div>
+        <div class="state">
+            <a class="btn" href="#">打折</a>
+            <span class="pic browse"><img src="http://otdgo898q.bkt.clouddn.com/browse.png" alt="">65135</span>
+            <span class="pic comments"><img src="http://otdgo898q.bkt.clouddn.com/comments.png" alt="">123</span>
+            <span class="pic favorites"><img src="http://otdgo898q.bkt.clouddn.com/trade.png" alt="">879</span>
+            <span class="pic pay"><img src="http://otdgo898q.bkt.clouddn.com/favorites.png" alt="">9814</span>
+        </div>
+    </div>
+</body>
+</html>
