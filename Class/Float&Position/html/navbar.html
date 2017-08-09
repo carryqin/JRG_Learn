@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+        } 
+        body {
+            background-color: white;
+        }
+        ul {
+            list-style: none;
+        }
+        .navbar {
+            list-style: none;
+        }
+        .menu>li>a {
+            display: block;
+            float: left;
+        }
+    
+        .menu {
+            background-color: #e6e6e6;
+            box-shadow: 0 2px 4px 0;
+            width:600px;
+            margin: auto;
+        }
+        .menu::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .menu>li {
+            float: left;
+            position: relative;
+        }
+        .menu li a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .menu li a:hover {
+            background-color: #ccc;
+        }
+        .menu .order {
+            background-color: #fff;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 160px;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 2px 4px 0
+        }
+        .menu>li:hover .order {
+            display: block;
+        }
+        .order a {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="menu">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">作品</a></li>
+            <li>
+                <a href="#">更多</a>
+                <div class="order">
+                    <ul>
+                        <li><a href="#">知乎</a></li>
+                        <li><a href="#">博客</a></li>
+                        <li><a href="#">微博</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
