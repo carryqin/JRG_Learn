@@ -1,287 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta name="description" content="RealWebsite" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* border: 1px solid red; */
-}
-.layout {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-.navbar ul>li>a {
-  color: white;
-}
-.navbar a {
-  color: yellow;
-}
-header {
-  background-image: url(http://otdgo898q.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170814234217.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.content p{
-  color: wihte;
-}
-.menu {
-  float: left;
-  margin-left: 15px;
-  margin-top:20px
-}
-ul {
-  margin: auto;
-}
-/* .nav {
+  <meta name="description" content="RealWebsite" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Overwatch</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* border: 1px solid red; */
+    }
+
+    .layout {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .navbar ul>li>a {
+      color: white;
+    }
+
+    .navbar a {
+      color: yellow;
+      font-size: 20px;
+    }
+
+    header {
+      background-image: url(http://otdgo898q.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170814234217.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .content p {
+      color: wihte;
+    }
+
+    .menu {
+      float: left;
+      margin-left: 15px;
+      margin-top: 20px
+    }
+
+    ul {
+      margin: auto;
+    }
+    /* .nav {
   display:table;
   margin: auto;
 } */
-.nav li {
-  float: right;
-  margin: 20px 10px 10px 10px;
-}
 
-.clearfix::after {
-  content:'';
-  display: block;
-  clear: both;
-}
-.content {
-  height:200px;
-  text-align: center;
-}
-.welcome {
-  font-size: 20px;
-  margin-top: 300px;
-  
-}
-.title {
-  font-size: 30px;
-}
-.more {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px;
-  border-radius: 3px;
-  background-color: rgb(108, 174, 142);
-  color: #fff;
-}
-.dutydescribe img {
-  width: 120px;
-  padding: 20px;
-  background: black;
-  border-radius: 50%;
-}
+    .nav li {
+      float: right;
+      margin: 20px 10px 10px 10px;
+    }
 
-.duty {
-  margin-top: 100px;
-  margin-bottom: 100px;
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
 
-}
-.dutytitle {
-  text-align: center;
-}
-.dutytitle p {
-  line-height: 3em;
-  color: grey;
-  margin-bottom: 50px;
-}
-.dutyleft {
-  float: left;
-  width: 33%;
-  text-align: center;
-  margin-left: 1px;
-  margin-right: 1px;
-}
-.dutydescribe p {
-  word-wrap:break-word; 
-}
-.storytitle {
-  text-align: center;
-  
-}
-.story {
-  background: rgb(240,240,240);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.storytitle p {
-  line-height: 3em;
-  color: grey;
-  margin-bottom: 50px;
-}
-.box {
-  width: 31%;
-  display: inline-block;
-  border: 1px solid white;
-  box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.3);
-  margin-left: 10px;
-  margin-top: 20px;
-}
-.box p {
-  text-align: center;
-  font-size: 20px;
-}
-.box img {
-  width: 100%;
-}
-.box a:hover {
-  background: yellow;
-  opacity: 0.5;
-}
-.time {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.timeimage img {
-  width: 120px;
-  padding: 20px;
-  background: black;
-  border-radius: 50%;
-  
-}
-.overwatch img{
-  width: 400px;
-}
-.timetitle {
-  text-align: center;
-}
-.timetitle p {
-  line-height: 3em;
-  color: grey;
-  margin-bottom: 50px;
-}
-.timedescribe img{
-  display:table;
-  margin:auto;
-  position: absolute; 
-  left: 43.5%;
+    .content {
+      height: 200px;
+      text-align: center;
+    }
 
-}
-.timedescribe ul>li {
-  padding-bottom:100px;
-}
-.timedescribe { 
-  position: relative; 
-  padding: 2em 0; 
-  margin-top: 100px; 
-  margin-bottom: 100px; 
-} 
-.timedescribe::before { 
-  content: ''; 
-  position: absolute; 
-  z-index: 0;
-  top: 8%; 
-  left: 49.5%; 
-  height: 70%; 
-  width: 4px; 
-  background: black; 
-} 
-.timepanel1 {
-  width: 300px;
-  margin-left: 100px;
-}
-.timepanel2 {
-  width: 300px;
-  margin-left: 600px;
-}
-    </style>
+    .welcome {
+      font-size: 20px;
+      margin-top: 300px;
+    }
+
+    .title {
+      font-size: 30px;
+    }
+
+    .more {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px;
+      border-radius: 3px;
+      background-color: rgb(108, 174, 142);
+      color: #fff;
+    }
+
+    .dutydescribe img {
+      width: 120px;
+      padding: 20px;
+      background: black;
+      border-radius: 50%;
+    }
+
+    .duty {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .dutytitle {
+      text-align: center;
+    }
+
+    .dutytitle p {
+      line-height: 3em;
+      color: grey;
+      margin-bottom: 50px;
+    }
+
+    .dutyleft {
+      float: left;
+      width: 33%;
+      text-align: center;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .dutydescribe p {
+      word-wrap: break-word;
+    }
+
+    .storytitle {
+      text-align: center;
+    }
+
+    .story {
+      background: rgb(240, 240, 240);
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .storytitle p {
+      line-height: 3em;
+      color: grey;
+      margin-bottom: 50px;
+    }
+
+    .box {
+      width: 31%;
+      display: inline-block;
+      border: 1px solid white;
+      box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+
+    .box p {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .box img {
+      width: 100%;
+    }
+
+    .box a:hover {
+      background: yellow;
+      opacity: 0.5;
+    }
+
+    .time {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background: white;
+    }
+
+    .timeimage img {
+      width: 120px;
+      padding: 20px;
+      background: black;
+      border-radius: 50%;
+    }
+
+    .timetitle {
+      text-align: center;
+    }
+
+    .timetitle p {
+      line-height: 3em;
+      color: grey;
+      margin-bottom: 50px;
+    }
+
+    .timedescribe img {
+      display: table;
+      margin: auto;
+      position: absolute;
+      left: 43.5%;
+    }
+
+    .timedescribe ul>li {
+      padding-bottom: 100px;
+    }
+
+    .timedescribe {
+      position: relative;
+      padding: 2em 0;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .timedescribe::before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: 8%;
+      left: 49.5%;
+      height: 70%;
+      width: 4px;
+      background: black;
+    }
+
+    .timepanel1 {
+      width: 300px;
+      margin-left: 100px;
+    }
+
+    .timepanel2 {
+      width: 300px;
+      margin-left: 600px;
+    }
+
+    .team {
+      background: rgb(240, 240, 240);
+      height: 800px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .teamtitle {
+      text-align: center;
+    }
+
+    .teamtitle p {
+      line-height: 3em;
+      color: grey;
+      margin-bottom: 50px;
+    }
+
+    .teampeople div {
+      float: left;
+      width: 33%;
+      text-align: center;
+    }
+
+    .teampeople div>img {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .social>li {
+      display: inline-block;
+      font-size: 40px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    i {
+      color: black;
+    }
+
+    .teamdescribe p {
+      margin-top: 50px;
+      font-size: 16px;
+      color: grey;
+      line-height: 3em;
+      text-align: center;
+    }
+
+    .link {
+      background: white;
+      height: 200px;
+      line-height: 200px;
+    }
+
+    .linklist ul>li {
+      float: left;
+      width: 25%;
+    }
+
+    .contact {
+      background-image: url(http://otdgo898q.bkt.clouddn.com/pigu.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 550px;
+    }
+
+    .contacttitle {
+      text-align: center;
+    }
+
+    .contacttitle h1 {
+      padding-top: 50px;
+      color: white;
+    }
+
+    .contacttitle p {
+      line-height: 3em;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+    .infobox {
+      text-align: center;
+    }
+
+    .contacinfo {
+      display: inline-block;
+    }
+
+    .contactmessage {
+      display: inline-block;
+    }
+
+    .contacinfo input {
+      width: 500px;
+      height: 60px;
+      margin-bottom: 10px;
+      float: left；
+    }
+
+    .contactmessage input {
+      width: 500px;
+      height: 200px;
+      position: relative;
+      top: -70px;
+    }
+
+    input {
+      border-radius: 3px;
+    }
+
+    .send {
+      padding: 10px;
+      border-radius: 3px;
+      background-color: rgb(108, 174, 142);
+      color: #fff;
+    }
+
+    .copyright,
+    .footerlink,
+    .footerdes {
+      display: inline-block;
+      line-height: 100px;
+      height: 100px;
+    }
+
+    .footer {
+      background: white;
+    }
+
+    .copyright {
+      float: left;
+    }
+
+    .footerdes {
+      float: right;
+    }
+
+    .footerdes a {
+      color: teal;
+      margin-left: 20px;
+    }
+
+    .footerlink {
+      font-size: 40px;
+      margin-left: 215px;
+    }
+
+    .footerlink a {
+      margin-left: 20px
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <div class="layout">
-    <div class="navbar clearfix">
-      <a href="#" class="menu">Menu</a>
-      <ul class="nav">
-        <li><a href="#">Hero</a></li>
-        <li><a href="#">Story</a></li>
-        <li><a href="#">Duty</a></li>
-        <li><a href="#">Protect</a></li>
-        <li><a href="#">Save</a></li>
-      </ul>
-    </div>
-    <div class="content">
-      <p class="welcome" style="color: white"><em>Welcome To Join 黑暗守望</em></p>
-      <p class="title" style="color: white"><strong>Let's Destroy Our Enemy</strong></p>
-      <a href="#" class="more">Know More</a>
-    </div>
+      <div class="navbar clearfix">
+        <a href="#" class="menu">Overwatch</a>
+        <ul class="nav">
+          <li><a href="#">Hero</a></li>
+          <li><a href="#">Story</a></li>
+          <li><a href="#">Duty</a></li>
+          <li><a href="#">Protect</a></li>
+          <li><a href="#">Save</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <p class="welcome" style="color: white"><em>Welcome To Join 黑暗守望</em></p>
+        <p class="title" style="color: white"><strong>Let's Destroy Our Enemy</strong></p>
+        <a href="#" class="more">Know More</a>
+      </div>
     </div>
   </header>
   <main>
     <div class="layout">
-    <div class="duty">
-      <div class="dutytitle">
-        <h1>DUTY</h1>
-        <p><em>Protect world peace</em></p>
-      </div>
-      <div class="dutydescribe clearfix">
-        <div class="kill dutyleft">
-          <img src="http://otdgo898q.bkt.clouddn.com/Kill.png" alt="">
-          <h2>Kill</h2>
-          <p>挖可视电话看上蝴蝶卡仨点化卡就收到货暗红色的 </p>
+      <div class="duty">
+        <div class="dutytitle">
+          <h1>DUTY</h1>
+          <p><em>Protect world peace</em></p>
         </div>
+        <div class="dutydescribe clearfix">
+          <div class="kill dutyleft">
+            <img src="http://otdgo898q.bkt.clouddn.com/Kill.png" alt="">
+            <h2>Kill</h2>
+            <p>挖可视电话看上蝴蝶卡仨点化卡就收到货暗红色的 </p>
+          </div>
           <div class="Protect dutyleft">
-          <img src="http://otdgo898q.bkt.clouddn.com/Protect.png" alt="">
-          <h2>Protect</h2>
-          <p>偶爱酒叟爱就搜房案件搜低级我爱设计费哦i啊建瓯市就我爱设计费</p>
-        </div>
+            <img src="http://otdgo898q.bkt.clouddn.com/Protect.png" alt="">
+            <h2>Protect</h2>
+            <p>偶爱酒叟爱就搜房案件搜低级我爱设计费哦i啊建瓯市就我爱设计费</p>
+          </div>
           <div class="Save dutyleft">
-          <img src="http://otdgo898q.bkt.clouddn.com/Save.png" alt="">
-          <h2>Save</h2>
-          <p>跑高考分开安排送昂巨额偶叫撒点击垃圾否案件安峰阿萨德按个阿发速度agree阿萨德艾文阿萨德阿哥爱迪生</p>
+            <img src="http://otdgo898q.bkt.clouddn.com/Save.png" alt="">
+            <h2>Save</h2>
+            <p>跑高考分开安排送昂巨额偶叫撒点击垃圾否案件安峰阿萨德按个阿发速度agree阿萨德艾文阿萨德阿哥爱迪生</p>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </main>
   <div class="story">
     <div class="layout">
-    <div class="storytitle">
+      <div class="storytitle">
         <h1>Story</h1>
         <p><em>The Legend Of Heros</em></p>
-    </div>
-    <div class="storydescribe">
-      <ul>
-        <li class="box">
-          <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/76.jpeg" alt=""></a>
-          <p>士兵76</p>
-        </li>
-        <li class="box">
-          <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/liekong.jpeg" alt=""></a>
-          <p>猎空</p>
-        </li>
-        <li class="box">
-          <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/heibaihe.jpeg" alt=""></a>
-          <p>黑百合</p>
-        </li>
-        <li class="box">
-          <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/laiyinhate.jpeg" alt=""></a>
-          <p>莱因哈特</p>
-        </li>
-        <li class="box">
-          <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/yuanshi.jpeg" alt=""></a>
-          <p>岛田源氏</p>
-        </li>
-        <li class="box">
-          <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/tianshi.jpeg" alt=""></a>
-          <p>Mercy</p>
-        </li>
-      </ul>
-    </div>
+      </div>
+      <div class="storydescribe">
+        <ul>
+          <li class="box">
+            <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/76.jpeg" alt=""></a>
+            <p>士兵76</p>
+          </li>
+          <li class="box">
+            <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/liekong.jpeg" alt=""></a>
+            <p>猎空</p>
+          </li>
+          <li class="box">
+            <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/heibaihe.jpeg" alt=""></a>
+            <p>黑百合</p>
+          </li>
+          <li class="box">
+            <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/laiyinhate.jpeg" alt=""></a>
+            <p>莱因哈特</p>
+          </li>
+          <li class="box">
+            <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/yuanshi.jpeg" alt=""></a>
+            <p>岛田源氏</p>
+          </li>
+          <li class="box">
+            <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/tianshi.jpeg" alt=""></a>
+            <p>Mercy</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="time">
@@ -345,8 +530,140 @@ ul {
             </div>
           </li>
         </ul>
-      </div> 
+      </div>
     </div>
   </div>
+  <div class="team">
+    <div class="layout">
+      <div class="teamtitle">
+        <h1>Team</h1>
+        <p><em>The Heros</em></p>
+      </div>
+      <div class="teampeople clearfix">
+        <div class="sishen">
+          <img src="http://otdgo898q.bkt.clouddn.com/%E6%AD%BB%E7%A5%9E%E5%A4%B4%E5%83%8F.jpg" alt="">
+          <h3>死神</h3>
+          <p>加布里尔·莱耶斯</p>
+          <ul class="social">
+            <li>
+              <a href="#">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            </li>
+          </ul>
+        </div>
+        <div class="kuangshu">
+          <img src="http://otdgo898q.bkt.clouddn.com/%E7%8B%82%E9%BC%A0%E5%A4%B4%E5%83%8F.jpg" alt="">
+          <h3>狂鼠</h3>
+          <p>詹米森•法尔克斯</p>
+          <ul class="social">
+            <li>
+              <a href="#">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            </li>
+          </ul>
+        </div>
+        <div class="zhu">
+          <img src="http://otdgo898q.bkt.clouddn.com/%E7%8C%AA%E5%A4%B4%E5%83%8F.jpg" alt="">
+          <h3>路霸</h3>
+          <p>马可•拉特莱奇</p>
+          <ul class="social">
+            <li>
+              <a href="#">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="teamdescribe">
+        <p>This World Need Heros</p>
+      </div>
+    </div>
+    <div class="link">
+      <div class="layout">
+        <div class="linklist clearfix">
+          <ul>
+            <li><a href="#"><img src="http://otdgo898q.bkt.clouddn.com/creative-market.jpg" alt=""></a></li>
+            <li><a href="#"><img src="http://otdgo898q.bkt.clouddn.com/designmodo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="http://otdgo898q.bkt.clouddn.com/themeforest.jpg" alt=""></a></li>
+            <li><a href="#"><img src="http://otdgo898q.bkt.clouddn.com/envato.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="infobox">
+        <div class="contacttitle">
+          <h1>CONTACT US</h1>
+          <p><em>We will let you become a hero</em></p>
+        </div>
+        <div class="contacinfo">
+          <input type="text" placeholder="Your Name"><br>
+          <input type="text" placeholder="Your Email"><br>
+          <input type="text" placeholder="Your Phone">
+        </div>
+        <div class="contactmessage">
+          <input type="text" placeholder="Your Message">
+        </div>
+        <div class="contactsend">
+          <a href="" class="send">Jion Overwatch</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="layout">
+        <div class="copyright clearfix">
+          <p>Copyright NinthG 2017</p>
+        </div>
+        <div class="footerlink">
+          <a href="#">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+          <a href="#">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+          <a href="#">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </a>
+        </div>
+        <div class="footerdes">
+          <a href="#">more</a>
+          <a href="#">more</a>
+        </div>
+      </div>
+    </div>
 </body>
+
 </html>
