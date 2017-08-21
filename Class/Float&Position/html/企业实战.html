@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overwatch</title>
+    <style>
+        /* reset样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+        }
+        /* 通用样式 */
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .layout {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        body {
+            font: 14px/1.5 Arial;
+            background-color: #fff;
+            color: #444; 
+        }
+        html,body {
+            height: 100%;
+        }
+        header {
+            background: url(http://otdgo898q.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170814234217.png) center center no-repeat;
+            background-size: cover;
+            position: relative;/* 用来确保绝对定位的参考点，原则 */
+            height: 100%;
+            min-height: 600px;
+        }
+        header .logo {
+            margin-top: 10px;/* a链接是行内元素，直接设置margin-top没用，浮动或者display之后可以设置 */
+            color: #f7ba3e;
+            font-size: 32px;
+            float: left;
+        }
+        header .nav {
+            float: right;
+        }
+        header .nav > li {
+            float: left;
+            margin: 10px;
+        }
+        header .nav a {
+            color: white;
+            font-size: 16px;
+            display: inline-block;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        header .nav a:hover {
+            background: #f7ba3e;
+        }
+        header .intro {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            text-align: center;
+        }
+        header .intro h1 {
+            font-size: 32px;
+        }
+        header .intro h2 {
+            font-size: 46px;
+            margin-top: 20px;
+        }
+        .button {
+         font-size: 18px;
+         color: white;
+         background: #f7ba3e;
+         padding: 5px 10px;
+         display: inline-block;
+         border-radius: 3px;    
+         opacity: 0.8; 
+         margin-top: 30px;
+        }
+        .button:hover {
+            opacity: 1;
+        }
+        section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        section>h2 {
+            font-size: 40px;
+        }
+        section>p {
+            margin-top: 10px;
+        }
+        section>ul>li {
+            float: left;
+            width: 33.33%;
+            padding: 10px 20px;
+        }
+        section ul>li>img {
+            width: 100px;
+            background: #f7ba3e;
+            border-radius: 50%;
+        }
+        section>ul p {
+            margin-top: 20px;
+        }
+        section .family figure {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            float: left;
+        }
+        section .family a {
+            position: relative;
+            display: block;
+            height: 180px;
+        }
+        section .family img {
+            width: 100%;
+            height: 100%;
+        }
+        section .family figcaption {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        section .family p {
+            color: #666;
+            margin-top: 10px;
+        }
+        section .family a:hover::before {
+            content: '+';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #f7ba3e;
+            color: white;
+            font-size: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.7;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar clearfix layout">
+            <a href="#" class="logo">Overwatch</a>
+            <ul class="nav">
+                <li><a href="#">Save</a></li>
+                <li><a href="#">Protect</a></li>
+                <li><a href="#">Duty</a></li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">Hreo</a></li>
+            </ul>
+        </div>
+        <div class="intro layout">
+                <h1>Welcome To Join 守望先锋</h1>
+                <h2>Let's Destroy Our Enemy</h2>
+                <a href="#" class="button">Know More</a>
+        </div>
+    </header>
+    <main class="layout">
+        <section class="clearfix">
+            <h2>职责</h2>
+            <p>守望先锋的职责</p>
+            <ul>
+                <li>
+                    <img src="http://otdgo898q.bkt.clouddn.com/Kill.png" alt="">
+                    <h2>杀戮</h2>
+                    <p>关于这个黑袍恐怖分子的传闻并不多，只知道大家都称他为“死神”。虽然没人知道他的真实身份和动机，但有一点是可以肯定的，他的出现意味着死亡。</p>
+                </li>
+                <li>
+                    <img src="http://otdgo898q.bkt.clouddn.com/Protect.png" alt="">
+                    <h2>保护</h2>
+                    <p>莱因哈特独特的道德观和舍小为大的信念，深得其上级的喜爱。他有话直说，因此成为了守望先锋最坚定的拥护者，同时在有必要时，也是守望先锋最刻薄的批评者，时刻提醒着其他人，守望先锋是一支正义之师</p>
+                </li>
+                <li>
+                    <img src="http://otdgo898q.bkt.clouddn.com/Save.png" alt="">
+                    <h2>拯救</h2>
+                    <p>齐格勒在踏入可以极大改善致命疾病和损伤治疗效果的突破性应用纳米生物学领域之前，是瑞士一家顶尖医院的手术部门负责人。正是她在医学领域的成就，引起了守望先锋的注意。</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>英雄</h2>
+            <p>守望先锋现役英雄</p>
+            <div class="family clearfix">
+                <figure>
+                    <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/76.jpeg" alt=""></a>
+                    <figcaption>士兵：76号</figcaption>
+                    <p>独自一人发动了一场旨在查出守望先锋解散真相的战争</p>
+                </figure>
+                <figure>
+                        <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/76.jpeg" alt=""></a>
+                        <figcaption>士兵：76号</figcaption>
+                        <p>独自一人发动了一场旨在查出守望先锋解散真相的战争</p>
+                </figure>
+                <figure>
+                        <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/76.jpeg" alt=""></a>
+                        <figcaption>士兵：76号</figcaption>
+                        <p>独自一人发动了一场旨在查出守望先锋解散真相的战争</p>
+                </figure>
+                <figure>
+                        <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/76.jpeg" alt=""></a>
+                        <figcaption>士兵：76号</figcaption>
+                        <p>独自一人发动了一场旨在查出守望先锋解散真相的战争</p>
+                </figure>
+                <figure>
+                        <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/76.jpeg" alt=""></a>
+                        <figcaption>士兵：76号</figcaption>
+                        <p>独自一人发动了一场旨在查出守望先锋解散真相的战争</p>
+                </figure>
+                <figure>
+                        <a href="#"><img src="http://otdgo898q.bkt.clouddn.com/76.jpeg" alt=""></a>
+                        <figcaption>士兵：76号</figcaption>
+                        <p>独自一人发动了一场旨在查出守望先锋解散真相的战争</p>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
