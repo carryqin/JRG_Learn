@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        li {
+            list-style-type: none;
+            font-size: 18px;
+            color: white;
+            background: #f7ba3e;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 3px;    
+            opacity: 0.8; 
+            margin-top: 10px;
+            text-align: center;
+            margin-right: 20px;
+            
+        }
+        .img-preview {
+            margin: 80px auto;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-preview"></div>
+    <ul class="ct">
+        <li data-img="http://otdgo898q.bkt.clouddn.com/playsation.png">playsation</li>
+        <li data-img="http://otdgo898q.bkt.clouddn.com/steam.png">steam</li>
+        <li data-img="http://otdgo898q.bkt.clouddn.com/%E6%88%98%E7%BD%91.png">battle.net</li>
+    </ul>
+    <script>
+        var ct = document.querySelector('.ct'),
+        childs = ct.querySelectorAll('li'),
+        preview = document.querySelector('.img-preview');
+        
+        for(var i = 0; i < childs.length; i++){
+            childs[i].addEventListener('mouseenter', function(){
+                var dataImg = this.getAttribute('data-img')
+                preview.innerHTML = '<img src="' + dataImg + '">'
+            })
+        }
+    </script>
+</body>
+</html>
