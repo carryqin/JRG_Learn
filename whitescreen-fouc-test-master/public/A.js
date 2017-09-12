@@ -1,1 +1,1 @@
-console.log('A.js')
+var a = 1
