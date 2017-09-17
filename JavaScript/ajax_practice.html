@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var xhr = new XMLHttpRequest()
+        xhr.open('GET', '/login?username=jirengu&password=123', true)
+        xhr.send()
+
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState === 4 && xhr.status === 200){
+                console.log(xhr.responseText)
+            }
+        }
+        
+        console.log('readyState:', xhr.readyState)
+        xhr.addEventListener('readystatechange', function(){
+            console.log('readyState:', xhr.readyState)
+        })
+
+        xhr.addEventListener('load', function(){
+            console.log(xhr.status)
+            if((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304){
+                var data = xhr.responseText
+            console.log(data)
+            }else
+            console.log('error')
+        })
+        xhr.onerror = function(){
+            console.log('error')
+        }
+
+
+        // var xhr = new XMLHttpRequest()
+        // xhr.open('POST', '/login', true)
+        // xhr.send(makeUrl({
+        //     username: 'NinthG',
+        //     age: 3
+        // }))
+        // xhr.addEventListener('username=jirengu&password=123', function(){
+        //     console.log(xhr.status)
+        //     if((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304){
+        //         var data = xhr.responseText
+        //     console.log(data)
+        //     }else
+        //     console.log('error')
+        // })
+        // xhr.onerror = function(){
+        //     console.log('error')
+        // }
+        // makeUrl({
+        //     username: 'NinthG',
+        //     age: 3
+        // })
+        // function makeUrl(obj){
+        //     var str = []
+        //     for(var key in obj){
+        //         str.push(key + '=' + obj[key])
+        //     }
+        //     return str.join('&')
+        // }
+
+    </script>
+</body>
+</html>
