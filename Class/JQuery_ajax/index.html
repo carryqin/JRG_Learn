@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,max-scale=1.0">
+  <meta charset="utf-8">
+  <title>豆瓣电影</title>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_380231_jxuu8z6tbc6m9529.css">
+</head>
+<body>
+  <main>
+      <section>1</section>
+      <section>2</section>
+      <section>3</section>
+  </main>
+  <footer>
+    <div class="active"><span class="iconfont icon-top"></span><span>Top250</span></div>
+    <div><span class="iconfont icon-us"></span><span>Top250</span></div>
+    <div><span class="iconfont icon-search"></span><span>Top250</span></div>
+  </footer>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-size: 12px;
+      line-height: 1.2;
+      background-color: #fff;
+    }
+    main{
+      height: calc(100vh - 50px);
+      background: blue;
+      overflow: scroll;
+    }
+    main>section{
+      display: none;
+    }
+    main>section:first-child{
+      display: block;
+    }
+    footer{
+      position: absolute;
+      bottom: 0;
+      height: 50px;
+      width: 100%;
+      background: red;
+      display: flex;
+      border-top: 5px;
+    }
+    footer>div{
+      flex: 1;
+      text-align: center;
+    }
+    footer .active{
+      color: green;
+    }
+    footer>div>span{
+      display: block;
+      padding-top: 5px;
+    }
+  </style>
+  <script>
+    $('footer>div').click(function(){
+        var index = $(this).index()
+        $('section').hide().eq(index).fadeIn()
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+
+    $.ajax({
+        url: 'http://api.douban.com/v2/movie/top250',
+        type: 'GET',
+        data: {
+            start: 0,
+            count: 20
+        },
+        dataType: 'json'
+    }).done(function(ret){console.log(ret)}.fail(function(){console.log('error...')}))
+  </script>
+</body>
+</html>
