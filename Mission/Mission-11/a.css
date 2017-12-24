@@ -34,6 +34,7 @@ body{
   }
   .topNavBar .logo .rs{
     color: #f0842c;
+    font-weight: bolder;
     margin-right: 4px;
   }
   .topNavBar .logo .card{
@@ -46,7 +47,7 @@ body{
     padding-bottom: 8px;
   }
   .topNavBar nav a{
-    color: #d0f7d0b3;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-weight: bold;
   }
@@ -64,7 +65,7 @@ body{
     border-bottom: 3px solid transparent;
   }
   .topNavBar nav ul>li>a:hover{
-    border-bottom-color: #2f3958;
+    border-bottom-color: #DC6465;
   }
   .banner {
     height: 515px;
