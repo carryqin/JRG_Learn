@@ -20,7 +20,7 @@ body{
   }
   /*上面不要看*/
   .topNavBar {
-    padding: 10px 0 20px 0;
+    padding: 20px 16px;
     position: fixed;
     width: 100%;
   }
@@ -28,12 +28,13 @@ body{
     padding: 0 10px;
   }
   .topNavBar .logo {
-    font-family: "Hiragino Kaku Gothic Std";
-    font-size: 22px;
-    padding-top: 1px;
+    font-family: "Arial Black";
+    font-size: 24px;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
   .topNavBar .logo .rs{
-    color: #f0842c;
+    color: #DC6465;
     font-weight: bolder;
     margin-right: 4px;
   }
@@ -62,7 +63,12 @@ body{
     margin-right: 17px;
   }
   .topNavBar nav ul>li>a{
+    font-size: 12px;
+    border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
+    font-weight: bold;
+    color: #b7b7b7;
+    display: block;
     padding-top: 5px;
     padding-bottom: 5px;
   }

@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body{
   background: black;
   color: white
@@ -12,11 +16,13 @@ a{
 }
 /*上面不要看*/
 .topNavBar {
+  padding: 20px 16px;
 }
 .topNavBar .logo {
-  font-family: "Hiragino Kaku Gothic Std";
-  font-size: 22px;
-  padding-top: 1px;
+  font-family: "Arial Black";
+  font-size: 24px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .topNavBar .logo .rs{
   color: #e6686a;
@@ -48,7 +54,12 @@ a{
   margin-right: 17px;
 }
 .topNavBar nav ul>li>a{
+  font-size: 12px;
+  border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
+  font-weight: bold;
+  color: #b7b7b7;
+  display: block;
   padding-top: 5px;
   padding-bottom: 5px;
 }
