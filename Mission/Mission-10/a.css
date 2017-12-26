@@ -49,6 +49,8 @@ a{
 }
 .topNavBar nav ul>li>a{
   border-bottom: 3px solid transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .topNavBar nav ul>li>a:hover{
   border-bottom-color: #DC6465;
