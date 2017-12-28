@@ -102,7 +102,7 @@
             HTML 5 &amp; CSS 3
           </h3>
           <div class="progressBar">
-            <div class="progress"></div>
+            <div class="progress"  style="width: 50%;"></div>
           </div>
         </li>
         <li>
@@ -110,7 +110,7 @@
             JavaScript
           </h3>
           <div class="progressBar">
-            <div class="progress"></div>
+            <div class="progress" style="width: 10%;"></div>
           </div>
         </li>
         <li>
@@ -118,49 +118,69 @@
             jQuery
           </h3>
           <div class="progressBar">
-            <div class="progress"></div>
+            <div class="progress" style="width: 10%;"></div>
           </div>
         </li>
         <li>
           <h3>
-            Vue
+            Axure
           </h3>
           <div class="progressBar">
-            <div class="progress"></div>
+            <div class="progress" style="width: 80%;"></div>
           </div>
         </li>
         <li>
           <h3>
-            React
+            Affinity
           </h3>
           <div class="progressBar">
-            <div class="progress"></div>
+            <div class="progress" style="width: 70%;"></div>
           </div>
         </li>
         <li>
           <h3>
-            HTTP
+            VBA
           </h3>
           <div class="progressBar">
-            <div class="progress"></div>
+            <div class="progress" style="width: 80%;"></div>
           </div>
         </li>
       </ol>
     </section>
-    <section>
+    <section class="portfolio">
       <h2>作品集</h2>
       <nav>
-        <ol>
-          <li>所有</li>
-          <li>框架</li>
-          <li>原生JS&amp;CSS</li>
+        <ol class="clearfix">
+          <li id="portfolioAll">所有</li>
+          <li id="portfolioArpg">ARPG</li>
+          <li id="portfolioFps">FPS</li>
         </ol>
+        <div id="portfolioBar" class="bar state-1">
+          <div class="bar-inner"></div>
+        </div>
       </nav>
+      <script>
+        portfolioAll.onclick = function(){
+          portfolioBar.className = 'bar state-1'
+        }
+        portfolioArpg.onclick = function(){
+          portfolioBar.className = 'bar state-2'
+        }
+        portfolioFps.onclick = function(){
+          portfolioBar.className = 'bar state-3'
+        }
+      </script>
 
-      <div class="jobs">
-        <div class="big"></div>
-        <div class="small"></div>
-        <div class="small"></div>
+      <div class="works" style="height: 600px;">
+        <div class="big" style="top: 0; left: 0;">
+          <a href="http://ff.laohu.com/"><img src="./img/最终幻想觉醒.png" width="600px" height="600px" alt="最终幻想:觉醒"></a>
+        </div>
+        <div class="small" style="top: 0; left: 638px;">
+          <a href="http://hj.laohu.com/"><img src="./img/火炬之光.png" width="300px" height="280px" alt="火炬之光手游"></a>
+        </div>
+        <div class="small" style="top: 320px; left: 638px;">
+          <a href="http://tanks.mail.ru/"><img src="./img/groundtanks.png" width="300px" height="280px" alt="GroundWar:tanks"></a>
+        </div>
       </div>
 
     </section>
