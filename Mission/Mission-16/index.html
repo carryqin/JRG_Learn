@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="Shortcut Icon" href="http://otdgo898q.bkt.clouddn.com/%E5%9C%A3%E8%AF%9E%E5%B8%BD%20%281%29.png">
+    <title>导航</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="mainxxx" class="wrapper"></div>
+    </main>
+    <footer></footer>
+</body>
+<script>
+    keys = {
+        '0': {0:'q',1:'w',2:'e',3:'r',4:'t',5:'y',6:'u',7:'i',8:'o',9:'p',length:10},
+        '1': {0:'a',1:'s',2:'d',3:'f',4:'g',5:'h',6:'j',7:'k',8:'l',length:9},
+        '2': {0:'z',1:'x',2:'c',3:'v',4:'b',5:'n',6:'m',length:7},
+        'length': 3
+    }
+    hash = {
+        'q': 'qq.com',
+        'w': 'weibo.com',
+        'e': 'ele.me',
+        'r': 'renren.com',
+        't': 'tianya.com',
+        'y': 'youtube.com',
+        'u': 'uc.com',
+        'i': 'iqiyi.com',
+        'o': 'opera.com',
+        'p': undefined,
+        'a': 'acfun.com',
+        's': 'souhu.com',
+        'z': 'zhihu.com',
+        'm': 'www.mcdonalds.com.cn'
+    }
+    //去除localStorage中zzz对应的hash
+    hashInLocalStorage = JSON.parse(localStorage.getItem('zzz') || 'null')
+    if(hashInLocalStorage){
+        hash = hashInLocalStorage
+    }
+    
+    // 遍历 keys，生成 kbd 标签
+    index = 0
+    while(index < keys['length']){
+        divxxx = document.createElement('div')
+        mainxxx.appendChild(divxxx)
+        
+        row = keys[index] //第一、二、三个数组
+        console.log(row)
+        index2 = 0
+        while(index2 < row['length']){ // 0~9 0~8 0~6
+        kbdxxx = document.createElement('kbd')
+        kbdxxx.textContent = row[index2]
+
+        buttonxxx = document.createElement('button')
+        buttonxxx.textContent = '编辑'
+        buttonxxx.id = row[index2]
+        buttonxxx.onclick = function(xzkjcnxlkcjlk){
+            console.log('button被点击了')
+            key = xzkjcnxlkcjlk['target']['id'] //q w e r t
+            x = prompt('给我一个网址')
+            hash[key] = x  //hash 变更了
+            localStorage.setItem('zzz', JSON.stringify(hash))
+            console.log(hash)
+        }
+        kbdxxx.appendChild(buttonxxx)
+
+        divxxx.appendChild(kbdxxx)
+        index2 = index2 + 1
+        }
+        index = index + 1
+    }
+    document.onkeypress = function(xzkjcnxlkcjlk){
+        key = xzkjcnxlkcjlk['key']
+        website = hash[key]
+        //location.href = 'http://' + website.
+        window.open('http://' + website, '_blank')
+    }
+</script>
+</html>
