@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+kbd {
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+}
+kbd > button {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    display: none;
+}
+kbd:hover > button {
+    display: inline-block;
+}
+body {
+    background: grey url(http://otdgo898q.bkt.clouddn.com/wallhaven-598540-min.jpg) no-repeat center center;
+}
+main {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#main {
+    display: inline-block;
+}
+#main > div:nth-child(2) {
+    margin-left: -40px;
+}
+#main > div:nth-child(3) {
+    margin-left: -160px;
+}
+.wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-size: cover;
+}
+.key {
+    width: 80px;
+    height: 75px;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%);
+    border: 1px solid #373737;
+    border-radius: 6px;
+    color: #c5c5c5;
+    box-shadow: 0 0 0 1px #1a1b1c;
+    box-shadow: 0 0 0 2px #1f2020;
+    box-shadow: 0 2px 0 1px #080808;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica;
+    position: relative;
+}
+.row {
+    margin: 16px;
+}
+.row .key {
+    margin: 0 8px;
+}
+.key img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+}
+.key .text {
+    position: absolute;
+    left: 31px;
+    top: 24px;
+}
