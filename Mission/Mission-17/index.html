@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="//at.alicdn.com/t/font_380231_nrsx6nnkb5ljtt9.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="Shortcut Icon" href="http://otdgo898q.bkt.clouddn.com/%E5%9C%A3%E8%AF%9E%E5%B8%BD%20%281%29.png">
     <title>导航</title>
@@ -63,25 +62,27 @@
         span.className = "text"
         kbd.appendChild(span)
         kbd.className = 'key'
-        button = document.createElement('button')
-        button.textContent = '编辑'
-        button.id = row[index2]
+        img2 = document.createElement('img')
+        // img2.textContent = '编辑'
+        img2.id = row[index2] //将原编辑按钮的方法名改为img2，并使用图标显示，本来想用字体图标，可是试了试不知道如何将字体图标的SVG中的一堆加到代码里面
+        img2.className = "edit"
+        img2.src = 'http://otdgo898q.bkt.clouddn.com/%E7%BC%96%E8%BE%91.png'
         img = document.createElement('img')
         if(hash[row[index2]]){
             img.src = 'http://'+ hash[row[index2]] + '/favicon.ico'
         }else{
             img.src = '//otdgo898q.bkt.clouddn.com/%E9%80%8F%E6%98%8E%E5%9D%97.png'
         }
-        button.onclick = function(xzkjcnxlkcjlk){
+        img2.onclick = function(xzkjcnxlkcjlk){
             console.log('button被点击了')
             key = xzkjcnxlkcjlk['target']['id'] //q w e r t
-            x = prompt('给我一个网址')
+            x = prompt('编辑想要储存的域名')
             hash[key] = x  //hash 变更了
             localStorage.setItem('zzz', JSON.stringify(hash))
             console.log(hash)
         }
         kbd.appendChild(img)
-        kbd.appendChild(button)
+        kbd.appendChild(img2)
         div.appendChild(kbd)
         index2 = index2 + 1
         }

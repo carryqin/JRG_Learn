@@ -12,13 +12,13 @@ kbd {
     text-transform: uppercase;
     position: relative;
 }
-kbd > button {
+kbd > .edit {
     position: absolute;
     left: 4px;
     bottom: 4px;
     display: none;
 }
-kbd:hover > button {
+kbd:hover > .edit {
     display: inline-block;
 }
 body {
