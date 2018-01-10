@@ -49,7 +49,7 @@
         // imgEdit.textContent = '编辑'
         imgEdit.id = id //将原编辑按钮的方法名改为imgEdit，并使用图标显示，本来想用字体图标，可是试了试不知道如何将字体图标的SVG中的一堆加到代码里面
         imgEdit.className = "edit"
-        imgEdit.src = '//otdgo898q.bkt.clouddn.com/%E7%BC%96%E8%BE%91.png'
+        imgEdit.src = 'http://otdgo898q.bkt.clouddn.com/%E7%BC%96%E8%BE%91.png'
         imgEdit.onclick = function (xzkjcnxlkcjlk) {
             console.log('button被点击了')
             var button = xzkjcnxlkcjlk['target'] //此处为了解决编辑后需要改变的图标，及如何拿到图标
@@ -59,7 +59,7 @@
             hash[key] = x  //hash 变更了
             img.src = 'http://' + x + '/favicon.ico'
             img.onerror = function (xxx) {
-                xxx.target.src = '//otdgo898q.bkt.clouddn.com/pic_loading-error.png'
+                xxx.target.src = 'http://otdgo898q.bkt.clouddn.com/pic_loading-error.png'
                 xxx.target.title = 'Icon获取失败'
             }
             localStorage.setItem('zzz', JSON.stringify(hash))
@@ -73,13 +73,13 @@
         if (domain) {
             imgIcon.src = 'http://' + domain + '/favicon.ico'
         } else {
-            imgIcon.src = '//otdgo898q.bkt.clouddn.com/%E9%80%8F%E6%98%8E%E5%9D%97.png'
+            imgIcon.src = 'http://otdgo898q.bkt.clouddn.com/%E9%80%8F%E6%98%8E%E5%9D%97.png'
         }
         imgIcon.title = domain // 图标title显示对应域名
         imgIcon.onerror = function (xxx) {
             console.log('下载图标失败')
             console.log(xxx)
-            xxx.target.src = '//otdgo898q.bkt.clouddn.com/pic_loading-error.png'
+            xxx.target.src = 'http://otdgo898q.bkt.clouddn.com/pic_loading-error.png'
             xxx.target.title = 'Icon获取失败'
         }
         return imgIcon
